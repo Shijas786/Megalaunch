@@ -1,0 +1,77 @@
+{
+  "name": "megaeth-launch-kit-pro",
+  "version": "2.0.0",
+  "description": "Professional enterprise-grade toolkit for building MegaETH-powered applications",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:pro": "hardhat test test/MegaETHLaunchKitPro.test.js",
+    "test:coverage": "hardhat coverage",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:pro": "hardhat run scripts/deploy-pro.js",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "hardhat run scripts/deploy-pro.js --network testnet",
+    "deploy:mainnet": "hardhat run scripts/deploy-pro.js --network mainnet",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "verify": "hardhat verify",
+    "size": "hardhat size-contracts",
+    "gas-report": "REPORT_GAS=true hardhat test",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "typechain": "hardhat typechain",
+    "docs": "hardhat docgen",
+    "security": "hardhat security",
+    "audit": "npm audit",
+    "build": "npm run compile && npm run typechain",
+    "dev": "npm run node & npm run deploy:local",
+    "ci": "npm run lint && npm run test && npm run build"
+  },
+  "keywords": [
+    "megaeth",
+    "ethereum",
+    "defi",
+    "payments",
+    "commerce",
+    "subscriptions",
+    "analytics",
+    "governance",
+    "bridge",
+    "sdk",
+    "enterprise",
+    "professional"
+  ],
+  "author": "MegaETH Foundation",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "solidity-coverage": "^0.8.0",
+    "hardhat-gas-reporter": "^1.0.0",
+    "hardhat-contract-sizer": "^2.0.0",
+    "hardhat-docgen": "^1.0.0",
+    "hardhat-typechain": "^1.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "ethers": "^6.8.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/megaeth/launch-kit-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/megaeth/launch-kit-pro/issues"
+  },
+  "homepage": "https://megaeth.org"
+}
