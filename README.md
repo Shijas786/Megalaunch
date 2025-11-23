@@ -23,6 +23,7 @@ MegaETH Launch Kit Pro is a complete, professional-grade infrastructure suite th
 - **🏛 Governance System**: Decentralized decision-making with voting mechanisms
 - **📈 Monitoring & Testing**: Real-time alerts, performance tracking, automated testing
 - **⚡ High Performance**: Optimized for gas efficiency and scalability
+- **🔌 Reown AppKit Integration**: Seamless wallet connectivity with 300+ wallet support
 
 ## 🏗 Architecture Overview
 
@@ -334,9 +335,28 @@ The system implements comprehensive role-based access control:
 4. **🔑 Multi-signature Support**: Enhanced security for high-value operations
 5. **📋 Audit Trails**: Comprehensive logging of all operations
 
+## 🔌 Reown AppKit Integration
+
+MegaETH Launch Kit Pro includes seamless integration with **Reown AppKit** (formerly WalletConnect) for wallet connectivity.
+
+### Features
+- **300+ Wallet Support**: MetaMask, WalletConnect, Coinbase Wallet, Rainbow, and more
+- **Multi-Chain**: Ethereum, Polygon, Arbitrum, Optimism, Base, MegaETH
+- **Social Login**: Google, X, GitHub, Discord, Apple, Facebook
+- **Cursor IDE Support**: Enhanced development experience with `.cursor/reown-appkit.mdc`
+
+### Quick Start
+
+1. **Get Project ID**: Visit [Reown Cloud](https://cloud.reown.com)
+2. **Set Environment Variable**: `NEXT_PUBLIC_REOWN_PROJECT_ID=your_project_id`
+3. **Start Development**: `npm run dev`
+
+See **[Reown AppKit Integration Guide](./REOWN_APPKIT.md)** for detailed documentation.
+
 ## 📚 Documentation
 
 - **[Complete Documentation](./DOCUMENTATION.md)** - Comprehensive guide
+- **[Reown AppKit Guide](./REOWN_APPKIT.md)** - Wallet connectivity integration
 - **[API Reference](./docs/API.md)** - Detailed API documentation
 - **[Integration Guides](./docs/INTEGRATION.md)** - Step-by-step integration guides
 - **[Security Guide](./docs/SECURITY.md)** - Security best practices

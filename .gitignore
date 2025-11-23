@@ -19,3 +19,13 @@ build/
 *.swp
 *.swo
 *~
+
+# Next.js
+.next/
+out/
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# Cursor IDE
+.cursor/
